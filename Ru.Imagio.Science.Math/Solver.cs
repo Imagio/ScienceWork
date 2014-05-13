@@ -21,7 +21,7 @@ namespace Ru.Imagio.Science.Math
 
             const double A = 1; //  Градиент давления
 
-            const double wMax = 0.25;   //  Максимальное значение скорости
+            const double wMax = 0.25;   //  Максимальная скорость проскальзывания (на границе)
 
             var dx = 1.0*lx/sizeX;  //  Размер ячейки
             var dy = 1.0*ly/sizeY;
