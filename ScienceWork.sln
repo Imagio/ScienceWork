@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ru.Imagio.Science.Math", "Ru.Imagio.Science.Math\Ru.Imagio.Science.Math.csproj", "{DEEF91CD-12DB-4504-8605-314EEF7065F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ru.Imagio.Science.Math.TestApp", "Ru.Imagio.Science.Math.TestApp\Ru.Imagio.Science.Math.TestApp.csproj", "{1666B033-BCA3-4B88-AD19-128ECF6E5143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DEEF91CD-12DB-4504-8605-314EEF7065F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEEF91CD-12DB-4504-8605-314EEF7065F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEEF91CD-12DB-4504-8605-314EEF7065F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1666B033-BCA3-4B88-AD19-128ECF6E5143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1666B033-BCA3-4B88-AD19-128ECF6E5143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1666B033-BCA3-4B88-AD19-128ECF6E5143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1666B033-BCA3-4B88-AD19-128ECF6E5143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

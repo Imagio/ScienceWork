@@ -12,21 +12,22 @@ namespace Ru.Imagio.Science.Math
         private readonly int _columnCount;
         private readonly double[,] _data;
 
-        public Matrix(int columnCount, int rowCount)
+        public Matrix(int columnCount, int rowCount, double defaultValue = 0)
         {
             _rowCount = rowCount;
             _columnCount = columnCount;
 
             _data = new double[_rowCount, _columnCount];
+            Clear(defaultValue);
         }
 
-        public void Clear()
+        public void Clear(double defaultValue = 0)
         {
             for (var i = 0; i < _rowCount; i++)
             {
                 for (var j = 0; j < _columnCount; j++)
                 {
-                    _data[i, j] = 0;
+                    _data[i, j] = defaultValue;
                 }
             }
         }
@@ -77,6 +78,24 @@ namespace Ru.Imagio.Science.Math
                     _data[i, j] = matrix._data[i, j];
                 }
             }
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder("[");
+            for (var i = 0; i < _rowCount; i++)
+            {
+                if (i > 0)
+                    sb.AppendLine();
+                for (var j = 0; j < _columnCount; j++)
+                {
+                    if (j > 0)
+                        sb.Append(", ");
+                    sb.AppendFormat("{0:##0.##}", _data[i, j]);
+                }
+            }
+            sb.Append("]");
+            return sb.ToString();
         }
     }
 }
